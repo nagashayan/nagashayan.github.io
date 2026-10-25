@@ -17,14 +17,61 @@
     .year { font-size: .92rem; }
     .links { margin-top: 14px; }
     footer { margin-top: 48px; padding: 15px 0; border-top: 1px solid #ddd; color: #666; font-size: .9rem; }
+    .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-photo {
+        width: 160px;
+        height: 195px;
+    }
+}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Nagashayana Ramamurthy</h1>
-    <p class="subtitle">PhD Student, Computer Science<br>Georgia State University | Atlanta, GA</p>
-    <p class="links"><a href="https://github.com/nagashayan">GitHub</a> | <a href="https://www.linkedin.com/in/nagashayana-ramamurthy/">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=KWgFxHYAAAAJ&hl=en">Google Scholar</a></p>
-  </header>
+<header class="profile-header">
+
+    <img
+        src="headshot.jpg"
+        alt="Portrait of Nagashayana Ramamurthy"
+        class="profile-photo"
+    >
+
+    <div>
+        <h1>Nagashayana Ramamurthy</h1>
+
+        <p class="subtitle">
+            PhD Student, Computer Science<br>
+            Georgia State University | Atlanta, GA
+        </p>
+
+        <p class="links">
+            <a href="https://github.com/nagashayan">GitHub</a> |
+            <a href="https://www.linkedin.com/in/nagashayana-ramamurthy/">
+                LinkedIn
+            </a> |
+            <a href="https://scholar.google.com/citations?user=KWgFxHYAAAAJ&amp;hl=en">
+                Google Scholar
+            </a>
+        </p>
+    </div>
+
+</header>
 
   <main>
     <section aria-labelledby="about"><h2 id="about">About Me</h2>
